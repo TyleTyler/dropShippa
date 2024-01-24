@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "AutoShipMk2",
+    "description": "Helps in automating dropshipping",
+    "version": "1.0",
+    "action": {
+        "default_popup": "chomeExtension.html",
+        "default_icon": "./icon.png"
+    },  
+    "content_scripts": [
+        {
+            "js": ["./extension.js"],
+            "matches": [
+            "https://www.aliexpress.us/item/*"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}
